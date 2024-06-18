@@ -1,18 +1,13 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { TotoComponent } from './toto/toto.component';
-import { WelcomeComponent } from './welcome/welcome.component';
-import { IncrementeComponent } from './incremente/incremente.component';
-import { DecrementeComponent } from './decremente/decremente.component';
+import { StandaloneMessageComponent } from './standalone-message/standalone-message.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet,
-    TotoComponent,
-    IncrementeComponent,
-    DecrementeComponent,
-  ],
+    StandaloneMessageComponent,
+    ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
